@@ -1,0 +1,48 @@
+body, html {
+    color: white;
+    background-color: #0E032E;
+    margin: 0;
+}
+
+.col-10 {
+    padding: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #080020;
+    color: white;
+    padding: 1rem;
+}
+
+.header {
+    background-color: #0E032E;
+    height: 10vh;
+    color: white;
+    padding: 1rem;
+}
+
+.content {
+    background-color: #1F1943;
+    flex: 1;
+    min-height: 70vh;
+    color: white;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: #0E032E;
+    height: 20vh;
+    color: white;
+    padding: 1rem;
+}
