@@ -13,11 +13,13 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2 sidebar">Sidebar</div>
+        @include('layouts.sidebar')
         <div class="col-10">
-            <div class="header">Header</div>
-            <div class="content">Content</div>
-            <div class="footer">Footer</div>
+            <div class="header">@include('components.profile')</div>
+            <div class="content">
+                @yield('content')
+            </div>
+            @include('layouts.footer')
         </div>
     </div>
 </div>
