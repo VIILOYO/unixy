@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/components/menu-item.css">
 
 <div class="col-2 sidebar">
-    <div style="padding-bottom: 30px">
+    <div class="sidebar-logo">
         <a href="#">
             <svg width="170" height="60" viewBox="0 0 170 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="30" cy="30" r="29.5" stroke="url(#paint0_linear_791_5318)"/>
@@ -32,10 +32,10 @@
     </div>
 
     <ul class="nav flex-column">
-        @include('components.menu-item', ['text' => 'Новости', 'link' => 'http://unixy.local'])
-        @include('components.menu-item', ['text' => 'Мессенджер'])
-        @include('components.menu-item', ['text' => 'Сообщество'])
-        @include('components.menu-item', ['text' => 'Магазин'])
-        @include('components.menu-item', ['text' => 'Настройки'])
+        @include('components.menu-item', ['text' => 'Новости', 'link' => route('menu-item', ['id' => 1])])
+        @include('components.menu-item', ['text' => 'Мессенджер', 'link' => route('menu-item', ['id' => 2])])
+        @include('components.menu-item', ['text' => 'Сообщество', 'link' => route('menu-item', ['id' => 3])])
+        @include('components.menu-item', ['text' => 'Магазин', 'link' => route('menu-item', ['id' => 4])])
+        @include('components.menu-item', ['text' => 'Настройки', 'link' => route('menu-item', ['id' => 5])])
     </ul>
 </div>

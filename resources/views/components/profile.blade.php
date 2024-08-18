@@ -2,7 +2,7 @@
 
 <div class="profile">
     @if(!\Illuminate\Support\Facades\Request::has('auth'))
-        <a class="profile-link" href="http://unixy.local?auth=true">Войти</a>
+        <a class="profile-link" href="{{ url()->current() . '?auth=true' }}">Войти</a>
     @endif
 
     @if(\Illuminate\Support\Facades\Request::has('auth'))
@@ -17,7 +17,7 @@
         </div>
 
         <div class="profile-icon">
-            <a href="http://unixy.local">
+            <a href="{{  url()->current() }}">
                 <img class="profile-img" src="https://avatars.steamstatic.com/251af0eb8293a000b633bfcd03865f54029f2359_medium.jpg">
             </a>
         </div>

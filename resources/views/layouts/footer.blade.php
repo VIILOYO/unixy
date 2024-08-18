@@ -3,7 +3,7 @@
 <div class="footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
+            <div class="col first">
                 <div>
                     <svg width="170" height="60" viewBox="0 0 170 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="30" cy="30" r="29.5" stroke="url(#paint0_linear_791_5318)"/>
@@ -32,11 +32,11 @@
                     </svg>
                 </div>
                 <div class="feedback">
-                    <a class="feedback-link" href="http://unixy.local?auth=true">Обратная связь</a>
+                    <a class="feedback-link" href="{{ url()->current() . '?auth=true' }}">Обратная связь</a>
                 </div>
-                <span class="cooperated">@2023 Unixy все права защищены </span>
+                <span class="cooperated">@2023 Unixy все права защищены</span>
             </div>
-            <div class="col">
+            <div class="col center">
                 <ul class="footer-ul"> О нас
                     <li class="footer-li">Реклама на сайте</li>
                     <li class="footer-li">Правила сайта</li>
@@ -44,8 +44,16 @@
                     <li class="footer-li">Политика конфиденциальности</li>
                 </ul>
             </div>
-            <div class="col">
-                Колонка
+            <div class="col last">
+                <span>Контакты</span>
+                <span>Соц сети</span>
+                <ul class="contacts">
+                    <li class="li-contact">Дискорд |</li>
+                    <li class="li-contact"> Телеграмм |</li>
+                    <li class="li-contact"> ВК</li>
+                </ul>
+                <span>Email</span>
+                <span class="cooperated">Unixy-support@mail.ru</span>
             </div>
         </div>
     </div>
